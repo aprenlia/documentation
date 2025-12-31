@@ -41,7 +41,18 @@ Generate Entries
   :ref:`generate them manually <vendor_bills/deferred/generate_manually>` by selecting the
   :guilabel:`Manually & Grouped` option instead.
 Based on
+  There are three ways to calculate the deferred expenses recognition:
+
+   - :guilabel:`Days`: The total amount is divided equally by the total number of days in the period, inclusive of the start and end dates.
+
+   - :guilabel:`Months`: Each full month represents an equal proportion of the total amount, regardless of the actual number of days in that month (standardized basis).
+
+   - :guilabel:`Full Months`: Any month started is treated as a complete month. However, the final month is only considered full if the period extends to the very last day of that month.
+
   Suppose a bill of $1200 must be deferred over 12 months.
+
+  - The :guilabel:`Days` option accounts for different amounts depending on the number of days in
+    each month (e.g., ~$102 for January and ~$92 for February).
 
   - The :guilabel:`Months` option accounts for $100 each month prorated to the number of days in
     that month (e.g., $50 for the first month if the :guilabel:`Start Date` is set to the 15th of
@@ -53,19 +64,16 @@ Based on
     eliminating the need for a 13th month to recognize any remainder as would be the case when using
     the :guilabel:`Months` option.
 
-  - The :guilabel:`Days` option accounts for different amounts depending on the number of days in
-    each month (e.g., ~$102 for January and ~$92 for February).
-
 .. _vendor_bills/deferred/generate_on_validation:
 
 Generate deferral entries on validation
 =======================================
 
 .. tip::
-   Make sure the :guilabel:`Start Date` and :guilabel:`End Date` fields are visible in the
-   :guilabel:`Invoice Lines` tab. In most cases, the :guilabel:`Start Date` should be in the same
-   month as the :guilabel:`Bill Date`. Deferred expense entries are posted from the bill date and
-   are displayed in the report accordingly.
+   Make sure the :guilabel:`Deferred Date` field is visible in the :guilabel:`Invoice Lines`
+   tab. In most cases, the start of the deferred period should be in the same month as the
+   :guilabel:`Accounting Date`. Deferred expense entries are posted from the accounting
+   date and are displayed in the report accordingly.
 
 For each line of the bill that should be deferred, specify the start and end dates of the deferral
 period.
@@ -95,6 +103,7 @@ Items`.
 
 .. image:: deferred_expenses/deferred_expense_report.png
    :alt: Deferred expense report
+   :align: center
 
 .. note::
     Only bills whose accounting date is before the end of the period of the report
@@ -121,7 +130,7 @@ At the end of each month, go to the Deferred Expenses report and click the
 
 .. example::
 
-   There are two bills:
+   There are two bills deferred based on :guilabel:`Months`:
 
    - Bill A: $1200 to be deferred from 01/01/2023 to 12/31/2023
    - Bill B: $600 to be deferred from 01/01/2023 to 12/31/2023

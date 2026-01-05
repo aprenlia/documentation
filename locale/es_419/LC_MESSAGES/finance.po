@@ -30,7 +30,7 @@
 # Iran Villalobos López, 2024
 # Fernanda Alvarez, 2024
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
-# "Fernanda Alvarez (mfar)" <mfar@odoo.com>, 2025.
+# "Fernanda Alvarez (mfar)" <mfar@odoo.com>, 2025, 2026.
 # "Patricia Gutiérrez (pagc)" <pagc@odoo.com>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
 #
@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: Odoo 18.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-26 18:30+0000\n"
-"PO-Revision-Date: 2025-12-30 23:20+0000\n"
+"PO-Revision-Date: 2026-01-05 23:21+0000\n"
 "Last-Translator: \"Fernanda Alvarez (mfar)\" <mfar@odoo.com>\n"
 "Language-Team: Spanish (Latin America) <https://translate.odoo.com/projects/"
 "odoo-19-doc/finance/es_419/>\n"
@@ -38254,10 +38254,10 @@ msgid ""
 "setup_configuration/starshipit_shipping>` for detailed information."
 msgstr ""
 "Starshipit es un operador de servicios de envío que facilita la integración "
-"de transportistas de la región de Australasia con Odoo. Consulte :doc:`la "
+"de transportistas de la región de Australasia con Odoo. Consulta :doc:`la "
 "documentación de Starshipit <../../inventory_and_mrp/inventory/"
-"shipping_receiving/setup_configuration/starshipit_shipping>` para más "
-"información."
+"shipping_receiving/setup_configuration/starshipit_shipping>` para obtener "
+"más información."
 
 #: ../../content/applications/finance/fiscal_localizations/australia.rst:487
 msgid ""
@@ -73787,9 +73787,10 @@ msgid ""
 "work_entries>` documentation for more information regarding validating work "
 "entries."
 msgstr ""
-"Para poder exportar los datos de nómina primero debe validar y corregir las "
-"entradas de trabajo. Consulte la documentación :doc:`entradas de trabajo "
-"<../../hr/payroll/work_entries>` para más información sobre la validación."
+"Para poder exportar los datos de nómina primero debes validar y corregir las "
+"entradas de trabajo. Consulte la documentación sobre :doc:`entradas de "
+"trabajo <../../hr/payroll/work_entries>` para obtener más información sobre "
+"la validación de estas entradas."
 
 #: ../../content/applications/finance/fiscal_localizations/united_states.rst:465
 msgid ""
@@ -77141,8 +77142,8 @@ msgid ""
 "Refer to the :doc:`Xendit documentation <payment_providers/xendit>` for more "
 "information."
 msgstr ""
-"Para más información, consulta la :doc:`documentación de Xendit "
-"<payment_providers/xendit>`."
+"Consulta la :doc:`documentación de Xendit <payment_providers/xendit>` para "
+"obtener más información."
 
 #: ../../content/applications/finance/payment_providers.rst:188
 msgid ""
@@ -77301,8 +77302,8 @@ msgid ""
 "<payment_providers/supported_providers>` for more information."
 msgstr ""
 "Los campos disponibles en la pestaña :guilabel:`Credenciales` dependen del "
-"proveedor de pago. Para más información consulte :ref:`la documentación "
-"relacionada <payment_providers/supported_providers>`."
+"proveedor de pago. Consulta :ref:`la documentación relacionada <"
+"payment_providers/supported_providers>` para obtener más información."
 
 #: ../../content/applications/finance/payment_providers.rst:243
 msgid ""

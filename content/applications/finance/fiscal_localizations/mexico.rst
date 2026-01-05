@@ -535,6 +535,22 @@ bill **Must be in draft state** for the update to happen.
 .. seealso::
    :doc:`../accounting/vendor_bills`
 
+.. _l10n/mx/journals:
+
+Journals
+~~~~~~~~
+
+If the **EDI for Mexico (Advanced Features)** module is installed, it is possible to specify the address of an
+invoice journal to make sure that all invoices form that journal use the intended zipcode when generating the 
+CFDI, additionally this is also used when generating :ref:`Global Invoices <l10n/mx/global-invoice>`.
+
+When invoicing on the same company under different timezones with the same user, it is important to create a
+system parameter to ensure the correct timezone is used for invoicing, by default Odoo uses the timezone of the user.
+
+With the :doc:`Debug Mode <../../general/developer_mode>` active go to :menuselection:`Settings --> Technical -->
+System Parameters` and create a new parameter with the key "l10n_mx_edi_tz_XX" where XX is the ID of the journal and
+as value add the desired timezone, for example, "America/Tijuana".
+
 .. _l10n/mx/payments:
 
 Payments
@@ -1019,11 +1035,22 @@ single invoice that can contain all operations, known as a *global invoice*.
    `Guía de llenado del CFDI global
    <http://omawww.sat.gob.mx/tramitesyservicios/Paginas/documentos/GuiallenadoCFDIglobal311221.pdf>`_
 
+Setup
+^^^^^
+In accounting settings review the *Global Invoice Serie* field as it is branch/company specific and is
+used to define the sequence of the global invoice.
+
+.. image:: mexico/mx-accounting-settings.png
+   :alt: Accounting setting with an MX company.
+
+.. tip::
+   The default sequence for every company/branch is *GINV/*
+
 Sales flow
 ^^^^^^^^^^
 
 First, it is necessary to create a special :guilabel:`Journal` created in :menuselection:`Accounting
---> Configuration --> Journals` with the purpose of keeping a separate sequence.
+--> Configuration --> Journals` with the purpose of keeping a separate sequence to use as "orders".
 
 Then, make sure that all the sales orders that need to be signed have the following configurations:
 
